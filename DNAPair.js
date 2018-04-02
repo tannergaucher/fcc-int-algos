@@ -22,7 +22,7 @@ function pairElement(str) {
 		answer.push(match.pair);
 	});
 
-	console.log(answer);
+	//console.log(answer);
 	return answer;
 }
 
