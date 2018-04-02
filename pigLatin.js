@@ -43,12 +43,12 @@ function translatePigLatin(str) {
 	var start = typeArray.indexOf("vowel");
 
 	if (typeArray[0] === "vowel") {
-		console.log(str + vEnd);
+		//console.log(str + vEnd);
 		return str + vEnd;
 	} else {
 		var decap = str.slice(0, start);
 		var head = str.substr(start);
-		console.log(head + decap + cEnd);
+		//console.log(head + decap + cEnd);
 		return head + decap + cEnd;
 	}
 }
