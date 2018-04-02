@@ -16,16 +16,15 @@ function diffArray(arr1, arr2) {
 		newArray.push(arrObj2);
 	}
 
-	//filter values
-	var isNegative = function(value) {
+	var notPresent = function(value) {
 		return value.index == -1;
 	};
-	var differents = newArray.filter(isNegative);
+	var differents = newArray.filter(notPresent);
 
 	for (var i = 0; i < differents.length; i++) {
 		answer.push(differents[i].value);
 	}
-	console.log(answer);
+	//console.log(answer);
 	return answer;
 }
 
