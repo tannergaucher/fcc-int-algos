@@ -73,18 +73,13 @@ function convertToRoman(num) {
 		}
 		//push roman equivilent to answer array
 		answer.push(romNums[start]);
-		console.log(answer);
 		//subtract current value of num from num
 		num -= numbers[start];
-		console.log(num);
 		//splice num  off of array
 		numbers.splice(num, 1);
-		console.log(numbers);
-		console.log(num);
 	}
-	//return answer;
 	var joined = answer.join("");
-	console.log(joined);
+	//console.log(joined);
 	return joined;
 }
 

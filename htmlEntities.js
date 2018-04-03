@@ -11,7 +11,7 @@ function convertHTML(str) {
 	var rep3 = rep2.replace(great, "&gt;");
 	var rep4 = rep3.replace(quot, "&quot;");
 	var rep5 = rep4.replace(apos, "&apos;");
-	console.log(rep5);
+	//console.log(rep5);
 	return rep5;
 }
 

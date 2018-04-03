@@ -9,16 +9,14 @@ function pairElement(str) {
 	var newArr = [];
 	var answer = [];
 
-	//split str
 	newArr = str.split("");
 
-	//for eat in new arr, find match in map
+	//for each in new arr, find match in data
 	newArr.forEach(function(letter) {
 		var match = data.find(function(data) {
 			return data.letter === letter;
 		});
 
-		//console.log(match.pair);
 		answer.push(match.pair);
 	});
 
